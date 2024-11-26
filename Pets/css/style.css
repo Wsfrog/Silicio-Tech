@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: linear-gradient(rgba(0,0,0,.72),rgba(0,0,0,.52)), url(../img/vetor-de-design-de-fundo-com-padrao-de-impressao-de-pata-de-animal-selvagem-e-divertido_1017-47618.avif);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  min-height: 100vh;
+  overflow-y: hidden;
+  font-family: 'Baloo 2', cursive;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+/* ID do body que dá permissão a exibição da barra de rolagem na página de consulta */
+#vertical{ 
+  min-height: initial;
+  overflow: auto;
+}
+
+p{
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+h1{
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+  margin-bottom: 20px;
+  color: #daa520; /* Novo Dourado */
+}
+
+h2{
+  font-weight: 700;
+  font-size: 18px;
+  margin-top: -15px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: #daa520; /* Novo Dourado */
+}
+
+.geral {
+  margin: 16px 140px 0px 140px;  
+  min-height: 100vh;
+}
+
+/* Header com logo e nav 
+========================*/
+header{
+    background-color: transparent;
+  display: flex;  
+  align-items: center;
+  padding: 10px 8px;
+  -webkit-box-shadow: 4px 4px 10px 0px rgba(50, 50, 50, 0.10);
+  -moz-box-shadow:    4px 4px 10px 0px rgba(50, 50, 50, 0.10);
+  box-shadow:         4px 4px 10px 0px rgba(50, 50, 50, 0.10);
+}
+
+header .logo,
+header nav,
+.index-content,
+.cadastro-content,
+#consulta-content,
+.pet-image{
+  width: 45%;
+}
+
+header .logo img{
+  width: 240px;
+}
+
+header nav{
+  padding: 4px 10px;
+  text-align: right;
+}
+
+header nav ul li{
+  display: inline;
+  margin: 0px 10px;
+}
+
+header nav a{
+  color: #daa520; /* Novo Dourado */
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 700;
+}
+header nav a:link,
+header nav a:visited{
+  color: #daa520; /* Novo Dourado */
+}
+header nav a:hover,
+header nav a:active{
+  color: #FFFFFF; /* Branco */
+}
+
+/* Conteúdo principal 
+=====================*/
+.wrapper{
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-index img{
+  width: 68%;
+  height: auto;
+}
+
+.image-cadastro img{
+  width: 80%;
+  height: auto;
+}
+
+.image-consultar img{
+  width: 74%;
+  height: auto;
+}
+
+.index-content span{
+  color: #daa520; /* Novo Dourado */
+}
+
+.cadastro-content{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.consulta-content ul li{
+  margin-left: 60px;
+}
+
+/* Links das redes sociais na index 
+===================================*/
+.links div{
+  display: flex;
+  align-items: center;
+}
+
+.links i{
+  font-size: 20px;
+  margin-right: 8px;
+}
+
+.links a{
+  margin-right: 30px;
+  color: #daa520; /* Novo Dourado */
+  text-decoration: none;
+}
+
+.links a:link,
+.links a:visited{
+  color: #daa520; /* Novo Dourado */
+}
+
+.links a:hover,
+.links a:active{
+  color: #FFFFFF; /* Branco */
+}
+
+/* Formulário de cadastro 
+=========================*/
+.bg-form{
+  width: 300px;
+  padding: 5px 16px;
+  background-color: #daa520; /* Novo Dourado */
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+form div{
+  margin: 16px;
+}
+
+label{
+  display: inline-block;
+  width: 120px;
+  color: #000; /* Preto */
+}
+
+input{
+  width: 200px;
+  height: 30px;
+  border-radius: 2px;
+  display: block;
+  margin-top: 2px;
+  padding-left: 10px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  font-family: 'Baloo 2', cursive;
+  font-weight: 400;
+}
+
+#btn-envio input,
+#consulta-content input{
+  display: inline-block;
+  width: 98px;
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 0;
+  background-color: #daa520; /* Novo Dourado */
+  color: #000; /* Preto */
+  font-weight: 700;
+  border: 0;
+}
+#btn-envio input:hover{
+  background-color: #FFFFFF; /* Branco */
+  color: #000; /* Preto */
+}
+#consulta-content input:hover{
+  background-color: #FFFFFF; /* Branco */
+  color: #000; /* Preto */
+}
+#registroPet::placeholder,
+#nomePet::placeholder,
+#tipoPet::placeholder,
+#idadePet::placeholder{
+  color: #CCC;
+}

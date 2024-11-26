@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Sistema de Condomínio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .login-container {
+            max-width: 400px;
+            margin: 100px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .login-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .btn-custom {
+            background-color: #FFC107;
+            color: #000;
+            border-radius: 25px;
+            padding: 10px 20px;
+            font-weight: bold;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .btn-custom:hover {
+            background-color: #e0a800;
+            transform: translateY(-2px);
+            transition: all 0.3s ease;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .alert {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="login-container">
+            <div class="login-header">
+                <h2>Login</h2>
+                <p>Sistema de Condomínio</p>
+            </div>
+
+            <form id="loginForm" onsubmit="return handleLogin(event)">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Senha:</label>
+                    <input type="password" class="form-control" id="password" name="password" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="userType">Tipo de Usuário:</label>
+                    <select class="form-control" id="userType" name="userType" required>
+                        <option value="">Selecione o tipo de usuário</option>
+                        <option value="morador">Morador</option>
+                        <option value="funcionario">Funcionário</option>
+                        <option value="admin">Administrador</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn btn-custom">Entrar</button>
+            </form>
+
+            <div class="alert alert-danger" id="errorAlert" role="alert">
+                Credenciais inválidas. Tente novamente.
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function handleLogin(event) {
+            event.preventDefault();
+
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const userType = document.getElementById('userType').value;
+            const errorAlert = document.getElementById('errorAlert');
+
+            // Verificação básica - em produção, autenticação seria feita no backend
+            if (!email || !password || !userType) {
+                errorAlert.style.display = 'block';
+                return false;
+            }
+
+            // Redirecionamento simulado com base no tipo de usuário
+            switch (userType) {
+                case 'morador':
+                    alert('Seja Muito Bem Vindo Sr.Morador');
+                    window.location.href = 'resident.html';
+                    break;
+                case 'funcionario':
+                    alert('Redirecionando para o Funcionarios');
+                    window.location.href = 'dashboard.php';
+                    break;
+                case 'admin':
+                    alert('Redirecionando para o administrador');
+                    window.location.href = '/projeto%20vegeta/pagina-principal/administrador/';
+                    break;
+
+                default:
+                    errorAlert.style.display = 'block';
+                    return false;
+            }
+
+            return false;
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

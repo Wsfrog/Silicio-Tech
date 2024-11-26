@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condomínio Inteligente</title>
+    <link rel="stylesheet" href="stylesPP.css">
+    <script src="script1.js" defer></script>
+</head>
+
+<body>
+    <!-- Barra de navegação -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Condomínio Inteligente</div>
+            <ul class="nav-links">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#about">Sobre Nós</a></li>
+                <li><a href="#contact">Contato</a></li>
+                <li><a href="login.html" class="btn-login">Login</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção principal -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1>Automatize seu Condomínio com Inteligência</h1>
+            <p>Soluções avançadas para segurança, gestão e conforto.</p>
+            <a href="#services" class="btn-primary">Nossos Serviços</a>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section id="services" class="features">
+        <h2>Nossos Serviços</h2>
+        <div class="features">
+            <div class="feature">
+                <h3><a href="./Gestao/gestaointeligente.html">Gestão Inteligente</a></h3>
+                <p>Automação completa para controle de visitantes, reservas de áreas comuns e monitoramento.</p>
+            </div>
+            <div class="feature">
+                <h3><a href="./segurança/segurança.html">Segurança Avançada</a></h3>
+                <p>Controle de acesso com reconhecimento facial e câmeras integradas ao sistema de segurança.</p>
+            </div>
+            <div class="feature">
+                <h3><a href="./Sustentabilidade/sustentabilidade.html">Economia de Energia</a></h3>
+                <p>Soluções sustentáveis que reduzem o consumo de energia através de sensores inteligentes.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre nós -->
+    <section id="about" class="about-section">
+        <h2>Sobre Nós</h2>
+        <p>Somos líderes no mercado de automação de condomínios, oferecendo soluções que otimizam a gestão e elevam a
+            qualidade de vida dos moradores.</p>
+    </section>
+
+    <!-- Contato -->
+    <section id="contact" class="contact-section">
+        <h2>Fale Conosco</h2>
+        <form action="send_email.php" method="POST" id="contactForm">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit" class="btn-submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Condomínio Inteligente. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>

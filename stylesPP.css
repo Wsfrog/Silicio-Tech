@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+}
+
+.logo {
+    color: #fff;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #111;
+    color: #fff;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.btn-login {
+    background-color: #ffd700;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #000;
+}
+
+.btn-login:hover {
+    background-color: #daa520;
+}
+
+/* Seção Principal */
+.hero-section {
+    height: 100vh;
+    background-image: url('img/WhatsApp\ Image\ 2024-10-08\ at\ 14.36.58\ \(1\).jpeg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.hero-content {
+    text-align: center;
+    color: #fff;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    background-color: #ffd700;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: #000;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #daa520;
+}
+
+/* Seção de Serviços */
+.features {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 60px 20px;
+    background-color: #ecf0f1;
+    flex-wrap: wrap;
+    /* Garante que em telas menores, os itens se alinhem corretamente */
+    text-align: center;
+    /* Centraliza o texto nos elementos */
+}
+
+#services h2 {
+    text-align: center;
+    /* Centraliza o título */
+    font-size: 2.5rem;
+    /* Aumenta o tamanho do título, se desejar */
+    margin-bottom: 40px;
+    /* Adiciona um espaçamento abaixo do título */
+}
+
+.feature {
+    text-align: center;
+    max-width: 300px;
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+.feature:hover {
+    transform: translateY(-10px);
+}
+
+.feature h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #34495e;
+}
+
+.feature p {
+    font-size: 1rem;
+    color: #7f8c8d;
+}
+
+/* Seção Sobre Nós */
+.about-section {
+    padding: 60px 20px;
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+}
+
+.about-section h2 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+/* Seção de Contato */
+.contact-section {
+    padding: 60px 20px;
+    background-color: #f4f4f9;
+}
+
+.contact-section h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.btn-submit {
+    background-color: #ffd700;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background-color: #daa520;
+}
+
+/* Footer */
+footer {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
