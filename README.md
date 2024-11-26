@@ -6,7 +6,7 @@ Este projeto foi desenvolvido por uma equipe de **quatro programadores**, com o 
 
 ## 👨‍💻 **A Equipe de Programadores**
 
-### 🧑‍💻 **João Pedro Ferreira Reduzino** - FullStack Developer
+### 👨‍💻 **João Pedro Ferreira Reduzino** - FullStack Developer
 > 🔗 [GitHub](https://github.com/JotaPe-dev)
 
 ---
