@@ -1,0 +1,122 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte alterada */
+    background-color: #000; /* Fundo preto */
+    color: #FFD700; /* Dourado */
+    margin: 0;
+    padding: 0;
+}
+
+h2, h1 {
+    color: #FFD700; /* Dourado */
+    text-align: center;
+}
+
+/* Form Container */
+.form-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #333; /* Preto claro */
+    color: #FFD700; /* Dourado */
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5); /* Sombra dourada */
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid #FFD700; /* Dourado */
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="password"],
+.form-container input[type="date"],
+.form-container input[type="time"],
+.form-container input[type="submit"],
+.form-container select,
+.form-container button {
+    width: calc(100% - 24px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #FFD700; /* Dourado */
+    border-radius: 4px;
+    background-color: #555; /* Preto mais claro */
+    color: #FFD700; /* Dourado */
+}
+
+.form-container button,
+.form-container input[type="submit"] {
+    background-color: #FFD700; /* Dourado */
+    color: #000; /* Preto */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.form-container button:hover,
+.form-container input[type="submit"]:hover {
+    background-color: #FFDF00; /* Dourado mais claro */
+    transform: scale(1.05);
+}
+
+/* Reservas List */
+.reservas-list {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #333; /* Preto claro */
+    color: #FFD700; /* Dourado */
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5); /* Sombra dourada */
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid #FFD700; /* Dourado */
+}
+
+.reservas-list table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.reservas-list th, .reservas-list td {
+    border: 1px solid #FFD700; /* Dourado */
+    padding: 10px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte alterada */
+}
+
+.reservas-list th {
+    background-color: #555; /* Preto mais claro */
+}
+
+.reservas-list td {
+    background-color: #333; /* Preto claro */
+}
+
+/* Estilo para links de Editar e Excluir */
+.actions a {
+    color: #FFD700; /* Dourado */
+    text-decoration: none;
+    transition: color 0.3s, transform 0.2s;
+}
+
+.actions a:hover {
+    color: #FFDF00; /* Dourado mais claro */
+    transform: scale(1.1);
+}
+
+/* Botão de Cancelar */
+a .botao {
+    display: inline-block;
+    margin-top: 20px;
+    text-align: center;
+    color: #000; /* Preto */
+    background-color: #FFD700; /* Dourado */
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+a .botao:hover {
+    background-color: #FFDF00; /* Dourado mais claro */
+    transform: scale(1.05);
+}

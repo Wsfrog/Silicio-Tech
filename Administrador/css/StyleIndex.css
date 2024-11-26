@@ -1,0 +1,81 @@
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Fundo preto */
+    color: #FFD700; /* Dourado */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente o conteúdo */
+    align-items: center; /* Centraliza verticalmente o conteúdo */
+    height: 100vh; /* Ocupa a altura total da tela */
+    text-align: center; /* Centraliza o texto */
+}
+
+h2 {
+    color: #FFD700; /* Dourado */
+}
+
+/* Painel Administrativo */
+.container {
+    display: block; /* Tornar o container visível */
+    padding: 20px;
+    background-color: #333; /* Preto claro */
+    color: #FFD700; /* Dourado */
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5); /* Sombra dourada */
+    width: 100%; /* Ocupa 100% da largura disponível */
+    max-width: 600px; /* Define a largura máxima do container */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 10px;
+    border-bottom: 1px solid #FFD700; /* Dourado */
+    position: relative;
+}
+
+ul li span {
+    font-weight: bold;
+    color: #FFD700; /* Dourado */
+}
+
+ul li i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+ul li ul {
+    display: none;
+    padding: 10px 20px;
+}
+
+ul li:hover ul {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: #FFD700; /* Dourado */
+}
+
+a.logout {
+    display: block;
+    margin-top: 20px;
+    color: #000; /* Preto */
+    background-color: #FFD700; /* Dourado */
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+a.logout:hover {
+    background-color: #FFDF00; /* Dourado mais claro */
+}

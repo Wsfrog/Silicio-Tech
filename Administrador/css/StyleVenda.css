@@ -1,0 +1,95 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte alterada */
+    background-color: #000; /* Fundo preto */
+    color: #FFD700; /* Dourado */
+    margin: 0;
+    padding: 0;
+}
+
+h2, h1 {
+    color: #FFD700; /* Dourado */
+    text-align: center;
+}
+
+/* Container */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #333; /* Preto claro */
+    color: #FFD700; /* Dourado */
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5); /* Sombra dourada */
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid #FFD700; /* Dourado */
+}
+
+/* Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #FFD700; /* Dourado */
+    padding: 10px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte alterada */
+}
+
+th {
+    background-color: #555; /* Preto mais claro */
+}
+
+td {
+    background-color: #333; /* Preto claro */
+}
+
+/* Formulário */
+.form-container {
+    margin-top: 20px;
+}
+
+.form-container input[type="number"],
+.form-container button {
+    width: calc(100% - 24px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #FFD700; /* Dourado */
+    border-radius: 4px;
+    background-color: #555; /* Preto mais claro */
+    color: #FFD700; /* Dourado */
+}
+
+.form-container button {
+    background-color: #FFD700; /* Dourado */
+    color: #000; /* Preto */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.form-container button:hover {
+    background-color: #FFDF00; /* Dourado mais claro */
+    transform: scale(1.05);
+}
+
+/* Botão de Cancelar */
+a .botao {
+    display: inline-block;
+    margin-top: 20px;
+    text-align: center;
+    color: #000; /* Preto */
+    background-color: #FFD700; /* Dourado */
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+a .botao:hover {
+    background-color: #FFDF00; /* Dourado mais claro */
+    transform: scale(1.05);
+}
