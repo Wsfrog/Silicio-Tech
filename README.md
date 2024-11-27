@@ -12,7 +12,7 @@ Este projeto foi desenvolvido por uma equipe de **quatro programadores**, com o 
 ---
 
 ### 👩‍💻 **Raissa da Anunciação Gama** - FullStack Developer
-> 🔗 [GitHub](https://github.com/anacosta)
+> 🔗 [GitHub](https://github.com/R4i5and0)
 
 ---
 
