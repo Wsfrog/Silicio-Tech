@@ -133,8 +133,12 @@ git push origin feature/minha-feature
 Abra um Pull Request:
 
 Descreva as mudanças feitas e envie para revisão.
+
+
 📝 Licença
 Este projeto está licenciado sob a MIT License. Veja o arquivo LICENSE para mais detalhes.
+
+
 
 📱 Entre em Contato
 Se você tiver dúvidas ou sugestões sobre o Silício Tech, fique à vontade para abrir uma issue ou entrar em contato diretamente com a equipe de desenvolvimento.
